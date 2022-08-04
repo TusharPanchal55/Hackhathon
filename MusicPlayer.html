@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music player</title>
+    <style>
+        body{
+            background-image: url("bgimage1.jpg");
+            background-repeat: no-repeat;
+            background-size : 100%;
+        }
+        table{
+            height : 570px;
+            width : 15%;
+            position : relative;
+            margin-top : 20px;
+            padding : 20px;
+            background-color: rgb(219, 0, 0);
+        }
+        .div1{
+            background-color :red;
+            width : 100%;
+            height : 40px;
+        }
+        .maindiv{
+            background-color:  white;
+            height: 570px;
+            width : 84%;
+            margin-top: 20px;
+            float: right;
+           background : transparent;         
+        }
+        .btn{
+            
+            margin-left:900px;
+            width : 150px;
+            height : 30px;
+        }
+        audio{
+            width : 400px;
+            margin-left: 300px;
+        }
+        img{
+            width : 400px;
+            height : 400px;
+            margin-left: 300px;
+        }
+        .audiodiv {
+            
+            margin-left: 00px;
+            margin-top: 00px;
+        }
+
+        .searchbox{
+            margin-left : 20px;
+            margin-top : 10px;
+            width : 250px;
+            height : 15px;
+        }
+        .a2{
+            text-decoration: none;
+            color : white;
+            font-size : 20px;
+        }
+        .a2:hover{
+            color : white;
+            text-shadow : 2px 2px 5px  white;
+        }
+        .pbtn{
+            width : 150px;
+            height : 30px;
+            margin-left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!--search bar-->
+    <div>
+        <div class="div1">
+        <input type = "text" placeholder="Search" class="searchbox">
+        <button type ="button" name ="btn">GO</button>
+        </div>
+
+    <!--body-->
+     <div class="maindiv">
+        
+            <img src ="audio1img.jpg">
+            <br><br><br>
+           <audio controls autoplay>
+            <source src ="audio1.mpeg" type="audio/mpeg" >
+           </audio>
+           <br><br>
+           <div class="btndiv">
+           
+           <button type="submit" value="next" class="btn" onclick="next()">NEXT</button>
+           </div>
+    </div>
+
+
+    </div>    
+        <div class="center">
+        <table border  = 1>
+        <tr>
+            <td align ="center">
+                <a href="file:///C:/Users/dell/Desktop/Nibodh%20web/Hackathon/MusicPlayer.html" class="a2">HOME</a>
+            </td>
+        </tr>
+        <tr>
+            <td align ="center">
+                <a href="file:///C:/Users/dell/Desktop/Nibodh%20web/Hackathon%20-%20Tushar%20and%20Vedant/MusicPlayer1.html" class="a2">FAVOURITE</a>
+            </td>
+        </tr>
+        <tr>
+        <td align ="center">
+            <a href="#" class="a2">PLAYLIST</a>
+        </td>
+        </tr>
+        <tr>
+            <td align ="center">
+                <a href="#" class="a2">TRENDING</a>
+            </td>
+        </tr>
+       </table>
+    </div>
+<script>
+    function next(){
+        location.replace("file:///C:/Users/dell/Desktop/Nibodh%20web/Hackathon%20-%20Tushar%20and%20Vedant/MusicPlayer1.html")
+    }
+    function previous(){
+        location.replace("file:///C:/Users/dell/Desktop/Nibodh%20web/Hackathon/MusicPlayer.html")
+    }
+</script>
+          
+</body>
+</html>
